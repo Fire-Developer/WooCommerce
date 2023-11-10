@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
  *{
     margin: 0;
     font-family: 'sans-serif';
@@ -30,9 +37,15 @@
         width: 100% !important; 
         background-color: black;
         gap: 10px !important;
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
         display: flex !important; 
-        flex-direction: row !important;
-        flex-wrap: wrap !important;
+        -webkit-box-orient: horizontal !important; 
+        -webkit-box-direction: normal !important; 
+            -ms-flex-direction: row !important; 
+                flex-direction: row !important;
+        -ms-flex-wrap: wrap !important;
+            flex-wrap: wrap !important;
         .card{
             margin:0 auto;
         }
